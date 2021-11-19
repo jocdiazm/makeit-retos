@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.container {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .container * {
+    border: red solid 1px;
+} */
+
+p.top-text {
+    font-family: 'Inconsolata';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    margin-left: 25px;
+    /* text-align: left; */
+}
+
+.container__404 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container__404 img {
+    min-width: 250px;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    left: 44px;
+    top: 109px;
+    border-radius: 0px;
+}
+
+.container__404-items {
+    margin: 20px;
+    max-width: 450px;
+}
+
+.container__404 .title-404 {
+    font-family: 'Space Mono';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    text-align: left;
+}
+
+.container__404 .description-404 {
+    font-family: 'Space Mono';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    text-align: left;
+}
+
+.container__404 button {
+    /* Back to homepage */
+    width: 130px;
+    height: 21px;
+    left: 67px;
+    top: 750px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    /* Rectangle 71 */
+    width: 216px;
+    height: 68px;
+    left: 24px;
+    top: 726px;
+    /* Gray 1 */
+    background: #333333;
+}
+
+.container__footer {
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #BDBDBD;
+
+}
+
+
