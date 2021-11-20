@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&family=Montserrat&display=swap');
+
+html {
+    height: 100vh;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.header__content {
+    flex-direction: column;
+    align-self: flex-start;
+    max-width: 333px;
+}
+
+h1.header__title {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    color: #000000;
+    min-width: 333px;
+}
+
+h2.header__content--subtitle{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #000000;
+}
+
+p.header__content--description {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.media__hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero__container{
+    margin-right: 25px;
+    flex-basis: 25%;
+}
+
+@media (max-width: 600px) {
+    .hero__container:nth-child(2n+2){
+        margin-top: 40px;
+    }
+  }
+@media (min-width: 601px) {
+    .hero__container:nth-child(3n+2){
+        margin-top: 60px;
+    }
+    .hero__container {
+        flex-basis: 25%
+    }
+  }
+
+.hero__card {
+    padding: 0;
+    display: inline-block;
+}
+
+img.hero__picture {
+    width: 138px;
+    height: auto;
+    margin: 0;
+}
+
+.hero__job {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    transform-origin: top right;
+    margin-top: 0px;
+    transform: rotate(-270deg) translateX(120%) translateY(-20px); 
+}
+
+.hero__name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    text-transform: capitalize;
+    color: #000000;
+    margin-top: 0px;
+}
+
+@media (min-width: 800px) {
+    .header {
+        justify-content: center;
+    }
+    .header__content {
+        max-width: 438px;
+    }
+    p.header__content--description {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media (min-width: 850px) {
+    .hero__name {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .hero__job {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    img.hero__picture {
+        width: 238px;
+        height: auto;
+        margin: 0;
+    }
+  }
+
+footer {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
