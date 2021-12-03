@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  width: 100%;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-around;
 }
 
 .App-logo {
