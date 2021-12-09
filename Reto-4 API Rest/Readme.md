@@ -1,76 +1,34 @@
-### Readme - retos
+### Readme - Reto 4 Agenda telefónica
 
 ---
 
-1. **backend de la agenda telefónica, paso 1**
+#### Paso 1
+![image](https://user-images.githubusercontent.com/13368066/145459853-3fec1b07-6df2-4381-ba34-7d8c75ca349c.png)
 
-Implemente una aplicación Node que devuelva una lista hardcodeada de entradas de la agenda telefónica desde la dirección http://localhost:3001/api/persons:
+#### Paso 2
+![image](https://user-images.githubusercontent.com/13368066/145460016-266fde22-2509-4425-9586-cbc6bee4da3b.png)
 
-![img](https://s3.amazonaws.com/makeitreal/images/classroom-prod/e6e9c16eef84a5f9fb056a9c83cc5c12.png)
+#### Paso 3
+![image](https://user-images.githubusercontent.com/13368066/145460083-fbec7e16-bbfa-4895-948e-c0efbabe03ff.png)
+![image](https://user-images.githubusercontent.com/13368066/145460130-39dcc6bd-0451-43dd-ab26-9dfadcc8ffed.png)
 
-Observe que la barra inclinada en la ruta api/persons no es un carácter especial y es como cualquier otro carácter del string.
+#### Paso 4
+![image](https://user-images.githubusercontent.com/13368066/145460220-2ac86ec5-0960-4d0e-8cd0-a595ddb70333.png)
+![image](https://user-images.githubusercontent.com/13368066/145460247-104129a6-9b0d-418d-a0aa-c6981a7ddbda.png)
 
-La aplicación debe iniciarse con el comando `npm start`.
+#### Paso 5
+![image](https://user-images.githubusercontent.com/13368066/145460390-e9f0f97b-a52a-4030-8b57-7d470f507872.png)
 
-La aplicación también debe ofrecer un comando `npm run dev` que ejecutará la aplicación y reiniciará el servidor siempre que se realicen cambios y se guarden en un archivo en el código fuente.
+#### Paso 6
+![image](https://user-images.githubusercontent.com/13368066/145460416-72a014ee-d951-45cd-ae18-99e0b3007f9b.png)
+![image](https://user-images.githubusercontent.com/13368066/145460541-6b4bfff6-5f8a-4094-b43a-d6fa5930066f.png)
 
-1. **backend de la agenda telefónica, paso 2**
+#### Paso 7 y 8
+![image](https://user-images.githubusercontent.com/13368066/145461560-b20e44b0-e052-425b-9332-1af12c376991.png)
 
-Implemente una página en la dirección http://localhost:3001/info que se parezca más o menos a esto:
+Resultado en consola:
 
-![img](https://s3.amazonaws.com/makeitreal/images/classroom-prod/c92dfb6350834ace3da27005639a0fc7.png)
+![image](https://user-images.githubusercontent.com/13368066/145461643-af8b38d5-f988-40c5-95fa-1ffedc681ded.png)
 
-La página tiene que mostrar la hora en que se recibió la solicitud y cuántas entradas hay en la agenda telefónica en el momento de procesar la solicitud.
 
-1. **backend de la agenda telefónica, paso 3**
 
-Implemente la funcionalidad para mostrar la información de una sola entrada de la agenda. La URL para obtener los datos de una persona con la identificación 5 debe ser http://localhost:3001/api/persons/5
-
-Si no se encuentra una entrada para la identificación dada, el servidor debe responder con el código de estado apropiado.
-
-1. **backend de la agenda telefónica, paso 4**
-
-Implemente la funcionalidad que hace posible eliminar una sola entrada de la agenda telefónica mediante una solicitud HTTP DELETE a la URL única de esa entrada de la agenda.
-
-Pruebe que su funcionalidad funcione con Postman o el cliente REST de Visual Studio Code.
-
-1. **backend de la agenda telefónica, paso 5**
-
-Expanda el backend para que se puedan agregar nuevas entradas a la agenda telefónica realizando solicitudes HTTP POST a la dirección http://localhost:3001/api/persons.
-
-Genere una nueva id para la entrada de la agenda con la función Math.random. Use un rango lo suficientemente grande para sus valores aleatorios de modo que la probabilidad de crear identificadores duplicados sea pequeña.
-
-1. **backend de la agenda telefónica, paso 6**
-
-Implemente el manejo de errores para crear nuevas entradas. No se permite que la solicitud se realice correctamente si:
-
-- Falta el nombre o número
-- El nombre ya existe en la agenda
-
-Responda a solicitudes como estas con el código de estado apropiado y también envíe información que explique el motivo del error, por ejemplo:
-
-```none
-{ error: 'name must be unique' }
-```
-
-**7. backend de la agenda telefónica, paso 7**
-
-Agregue el middleware [morgan](https://github.com/expressjs/morgan) a su aplicación para iniciar sesión. Configúrelo para registrar mensajes en su consola según la pequeña configuración.
-
-La documentación de Morgan no es la mejor y es posible que deba dedicar algún tiempo a averiguar cómo configurarla correctamente. Sin embargo, la mayor parte de la documentación del mundo cae en la misma categoría, por lo que es bueno aprender a descifrar e interpretar documentación críptica en cualquier caso.
-
-Morgan se instala como todas las demás bibliotecas con el comando `npm install`. La puesta en funcionamiento de Morgan ocurre de la misma manera que la configuración de cualquier otro middleware mediante el comando `app.use`.
-
-**8. backend de la agenda telefónica, paso 8**
-
-Configure morgan para que también muestre los datos enviados en las solicitudes HTTP POST:
-![img](https://s3.amazonaws.com/makeitreal/images/classroom-prod/cc6b957700ef3d022fdd8dd49325e867.png)
-
-Tenga en cuenta que el registro de datos incluso en la consola puede ser peligroso, ya que puede contener datos confidenciales y puede violar la ley de privacidad local (por ejemplo, GDPR en la UE) o el estándar comercial. En este ejercicio, no tiene que preocuparse por los problemas de privacidad, pero en la práctica, intente no registrar ningún dato sensible.
-
-Este ejercicio puede resultar bastante complicado, aunque la solución no requiere mucho código.
-
-Este ejercicio se puede completar de diferentes formas. Una de las posibles soluciones utiliza estas dos técnicas:
-
-- creando nuevos tokens
-- JSON.stringify
