@@ -1,0 +1,28 @@
+$screen-small: 450px;
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  justify-content: center;
+  position: relative;
+  padding: 0 50px;
+  box-shadow: 0 -5px 5px -5px rgb(0, 0, 0, 0.1);
+  min-height: 75px;
+  max-height: 75px;
+  margin-top: 25px;
+  @media only screen and (max-width: $screen-small) {
+    font-size: 12px;
+  }
+
+  & > img {
+    width: 120px;
+    height: auto;
+    padding-left: 10px;
+  }
+  .hero {
+    text-decoration: none;
+    font-weight: light;
+    color: gray;
+  }
+}
