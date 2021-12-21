@@ -1,6 +1,7 @@
 import CandidateCard from './components/CandidateCard';
 import TotalVotes from './components/TotalVotes';
 import VotingOptions from './components/VotingOptions';
+import Footer from './components/Footer';
 
 import { candidates, VotingProvider } from './components/VotingContext';
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <VotingProvider>
       <div className="voting__container">
+        <h1> ¡Vota por tu mentor Favorito!</h1>
         <div className="voting__candidates">
           {Object.keys(candidates).map((id) => (
             <CandidateCard
@@ -28,6 +30,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </VotingProvider>
   );
 }
