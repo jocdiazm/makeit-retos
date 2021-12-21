@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import CandidateCard from './components/CandidateCard';
+import TotalVotes from './components/TotalVotes';
+import VotingOptions from './components/VotingOptions';
+
+import { candidates, VotingProvider } from './components/VotingContext';
+
+import './App.scss';
+import BarChart from './components/BarChart';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <VotingProvider>
+      <div className="voting__container">
+        <div className="voting__candidates">
+          {Object.keys(candidates).map((id) => (
+            <CandidateCard
+              key={`${id}-cand`}
+              candidateId={id}
+              candidate={candidates[id]}
+            />
+          ))}
+        </div>
+        <div className="voting__results">
+          <VotingOptions />
+          <div className="voting__results--values">
+            <TotalVotes />
+            <BarChart />
+          </div>
+        </div>
+      </div>
+    </VotingProvider>
   );
 }
 

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.voting__container {
+  font-family: Nunito, sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  justify-content: center;
+  margin: auto;
+  align-items: stretch;
+  margin-top: 50px;
+}
+
+.voting__candidates {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.voting__results {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  margin-top: 50px;
+  &--values {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+    flex-basis: 80%;
+    margin-left: 50px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    & p {
+      text-align: center;
+    }
+  }
+}
