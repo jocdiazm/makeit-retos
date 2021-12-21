@@ -11,26 +11,28 @@ import BarChart from './components/BarChart';
 function App() {
   return (
     <VotingProvider>
-      <div className="voting__container">
-        <h1> ¡Vota por tu mentor Favorito!</h1>
-        <div className="voting__candidates">
-          {Object.keys(candidates).map((id) => (
-            <CandidateCard
-              key={`${id}-cand`}
-              candidateId={id}
-              candidate={candidates[id]}
-            />
-          ))}
-        </div>
-        <div className="voting__results">
-          <VotingOptions />
-          <div className="voting__results--values">
-            <TotalVotes />
-            <BarChart />
+      <div className="layout">
+        <div className="voting__container">
+          <h1> ¡Vota por tu mentor Favorito!</h1>
+          <div className="voting__candidates">
+            {Object.keys(candidates).map((id) => (
+              <CandidateCard
+                key={`${id}-cand`}
+                candidateId={id}
+                candidate={candidates[id]}
+              />
+            ))}
+          </div>
+          <div className="voting__results">
+            <VotingOptions />
+            <div className="voting__results--values">
+              <TotalVotes />
+              <BarChart />
+            </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </VotingProvider>
   );
 }
