@@ -1,9 +1,17 @@
+$BorderColor: #d7d6fc;
+$primary-purple: #6b00f5;
+$PattensBlue: #e1f0fe;
+$GhostWhite: #f7f7ff;
+$WhiteIce: #defef0;
+
 .App {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: auto;
-  margin: 0;
-  background-image: url('background.svg');
-  background-size: cover;
+  align-items: center;
+  margin: auto;
+  & > h1 {
+    margin: 10px 10px;
+    text-align: center;
+  }
 }

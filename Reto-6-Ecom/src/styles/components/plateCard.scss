@@ -1,0 +1,63 @@
+$primary-purple: #6b00f5;
+.plate-card {
+  height: 190px;
+  display: flex;
+  position: relative;
+  max-width: 400px;
+  margin: 0px 20px;
+  &__img {
+    position: relative;
+    z-index: 10;
+    width: 150px;
+    margin-right: 10px;
+    & > img {
+      max-width: 150px;
+      height: auto;
+    }
+  }
+  &__details {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    z-index: 10;
+    flex-basis: 40%;
+    &--title {
+      text-align: left;
+      line-height: 22px;
+      font-size: 20px;
+    }
+    &--price {
+      text-align: left;
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: 900;
+      font-style: normal;
+    }
+    & > button {
+      margin: 0;
+      align-self: center;
+      width: 130px;
+      height: 32px;
+      border: none;
+      background-color: $primary-purple;
+      color: white;
+      line-height: 32px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 20px;
+    }
+  }
+}
+
+.plate-card__background {
+  position: absolute;
+  top: 0;
+  margin: 20px 15px;
+  width: calc(100% - 30px);
+  height: 150px;
+  background-color: rgba(122, 179, 243, 0.2);
+  border-radius: 20px;
+}
