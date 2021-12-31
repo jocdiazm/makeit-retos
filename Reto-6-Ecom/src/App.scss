@@ -3,15 +3,24 @@ $primary-purple: #6b00f5;
 $PattensBlue: #e1f0fe;
 $GhostWhite: #f7f7ff;
 $WhiteIce: #defef0;
-
+@import url('https://fonts.googleapis.com/css?family=Nunito:wght@700;800;900&family=Poppinswght@700;800;900&display=swap');
 .App {
   display: flex;
   flex-direction: column;
   height: 100vh;
   align-items: center;
-  margin: auto;
-  & > h1 {
-    margin: 10px 10px;
+  margin: 20px 15px 15px 0px;
+}
+
+.menu__container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  &--title {
+    font-size: 32px;
+    margin-left: 20px;
+    line-height: 48px;
+    font-weight: 700;
     text-align: center;
+    text-transform: capitalize;
   }
 }
