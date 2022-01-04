@@ -1,8 +1,11 @@
 # Sobre el proyecto
 
-En este proyecto se muestra un eCommerce component.
+En este proyecto se muestra un eCommerce component de platos de un restaurante.
 
-<img alt="component preview" src="https://s3.amazonaws.com/makeitreal/images/classroom-prod/7e259b15788fd9c437313c86d945f771.png">\
+## Live demo
+[Ecommerce component in netlify](https://ecommerce-component-jcdiaz.netlify.app/)  
+
+![reto-6-ecommerce-component](https://user-images.githubusercontent.com/13368066/148077744-a9dc9dca-b11b-4f88-b9ba-5c0ab50a3f7f.gif)
 
 **Los usuarios pueden:**
 
