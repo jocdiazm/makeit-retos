@@ -1,4 +1,4 @@
-import PlateCard from './PlateCard';
+import PlateCard from 'PlateCard';
 import { usePlates } from './PlatesContext';
 
 const Plates = () => {
