@@ -41,7 +41,7 @@ $primary-purple: #6b00f5;
 .plate-card__description {
   display: flex;
   flex-direction: column;
-  flex-basis: 80%;
+  flex-basis: 70%;
   &--name {
     font-size: 16px;
   }
@@ -54,6 +54,7 @@ $primary-purple: #6b00f5;
   &--modify-order {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     & .quantity {
       // margin: 0 10px;
       padding: 0 5px;

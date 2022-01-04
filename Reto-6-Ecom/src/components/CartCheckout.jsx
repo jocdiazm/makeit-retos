@@ -13,13 +13,13 @@ const CartCheckout = () => {
     <div className='checkout'>
       {Object.keys(cart).length > 0 ? (
         <div className='checkout__details'>
-          <span>Subtototal :</span>
+          <span>Subtotal:</span>
           <span className='checkout__details--subtotal'>
             ${subTotal.toFixed(2)}
           </span>
-          <span>Taxes : </span>
+          <span>Taxes: </span>
           <span className='checkout__details--taxes'>${taxes.toFixed(2)}</span>
-          <span>Taxes : </span>
+          <span>Total: </span>
           <span className='checkout__details--total'>${total.toFixed(2)}</span>
         </div>
       ) : null}

@@ -13,16 +13,16 @@ const App = () => {
   return (
     <div className='App'>
       <PlatesProvider>
-        <div className='menu__container'>
-          <span className='menu__container--title'>to go menu</span>
-          <Plates />
-        </div>
         <div className='cart__container'>
           <span className='cart__container--title'>your cart</span>
           <PlatesInCart />
           <div className='cart__container--checkout'>
             <CartCheckout />
           </div>
+        </div>
+        <div className='menu__container'>
+          <span className='menu__container--title'>to go menu</span>
+          <Plates />
         </div>
       </PlatesProvider>
     </div>
