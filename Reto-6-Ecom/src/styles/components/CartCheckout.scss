@@ -1,0 +1,25 @@
+.checkout__details {
+  font-size: 16;
+  font-weight: 700;
+  margin: 10px 35px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  text-align: end;
+  &--subtotal {
+    line-height: 32px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  &--taxes {
+    line-height: 32px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  &--total {
+    line-height: 32px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #6b00f5;
+  }
+}

@@ -1,0 +1,106 @@
+$primary-purple: #6b00f5;
+.plate-card__container {
+  display: flex;
+  margin: 0px auto;
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &:not(:first-child) {
+    border-top: 1px solid #d7d7f9;
+  }
+  &:last-child {
+    border-bottom: 5px solid #d7d7f9;
+  }
+}
+
+.plate-card__thumbnail {
+  position: relative;
+  margin-right: 10px;
+
+  & > img {
+    width: 66px;
+    height: auto;
+  }
+  &--circle {
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    top: 15px;
+    left: 18px;
+  }
+}
+
+.plate-card__description {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  &--name {
+    font-size: 16px;
+  }
+  &--price {
+    line-height: 32px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &--modify-order {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    & .quantity {
+      // margin: 0 10px;
+      padding: 0 5px;
+      line-height: 32px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    & > .btn__reduce {
+      background-color: $primary-purple;
+      padding: 8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 32px;
+      &:hover:enabled {
+        cursor: pointer;
+        box-shadow: 0px 10px 10px -5px rgba(30, 144, 255, 40%);
+        transform: scale(1.03);
+      }
+      &:active:enabled {
+        box-shadow: 0px 4px 8px rgba(30, 144, 255, 30%);
+        transform: scale(0.98);
+      }
+    }
+    & > .btn__increase {
+      background-color: $primary-purple;
+      padding: 8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 32px;
+      transform: rotate(180deg);
+      &:hover:enabled {
+        cursor: pointer;
+        box-shadow: 0px -10px 10px -5px rgba(30, 144, 255, 40%);
+        transform: rotate(180deg) scale(0.98);
+      }
+      &:active:enabled {
+        box-shadow: 0px 4px 8px rgba(30, 144, 255, 30%);
+        transform: rotate(180deg) scale(0.98);
+      }
+    }
+
+    & > .total-price {
+      line-height: 32px;
+      font-size: 32px;
+      font-weight: 700;
+      margin-left: 5px;
+    }
+  }
+}
