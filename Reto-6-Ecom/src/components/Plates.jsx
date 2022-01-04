@@ -1,5 +1,5 @@
-import { usePlates } from './PlatesContext';
 import PlateCard from './PlateCard';
+import { usePlates } from './PlatesContext';
 
 const Plates = () => {
   const { plates } = usePlates();
