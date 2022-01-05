@@ -2,11 +2,12 @@
 import './App.scss';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { MantineProvider } from '@mantine/core';
+import { Center, Pagination } from '@mantine/core';
 import CharacterGrid from './components/ChracacterGrid';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [activePage, setPage] = useState(5);
   const [characters, setCharacters] = useState([]);
   const [currentPageUrl, setCurrentPageUrl] = useState(
     'https://rickandmortyapi.com/api/character',
@@ -27,11 +28,20 @@ const App = () => {
     getCharacters();
   }, [currentPageUrl]);
 
-  console.log(nextPageUrl);
+  console.log(nextPageUrl, pages);
 
   return (
     <div>
       <CharacterGrid characters={characters} />
+      <Center>
+        <Pagination
+          page={activePage}
+          onChange={setPage}
+          total={pages}
+          siblings={1}
+          style={{ marginTop: 20 }}
+        />
+      </Center>
     </div>
   );
 };

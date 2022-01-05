@@ -5,9 +5,16 @@ import CharacterCard from './CharacterCard';
 
 const ChracacterGrid = ({ characters }) => {
   return (
-    <Grid columns={18} justify='center' align='center' gutter='xs'>
+    <Grid columns={18} justify='center' align='center' gutter='lg'>
       {characters.map((char) => (
-        <Grid.Col span={18} xs={9} sm={9} md={6} lg={4}>
+        <Grid.Col
+          span={18}
+          xs={9}
+          sm={9}
+          md={6}
+          lg={4}
+          style={{ maxHeight: 420 }}
+        >
           <CharacterCard character={char} />
         </Grid.Col>
       ))}

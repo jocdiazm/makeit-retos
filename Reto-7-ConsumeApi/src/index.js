@@ -8,11 +8,11 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MantineProvider theme={{ colorScheme: 'dark' }}>
+    <MantineProvider theme={{ colorScheme: 'light' }}>
       <AppShell
-        padding='md'
+        padding='lg'
         header={
-          <Header height={40} padding='md'>
+          <Header height={60} padding='md'>
             {/* Header content */}
           </Header>
         }
