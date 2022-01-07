@@ -1,9 +1,9 @@
-import { Grid } from '@mantine/core';
+import { Grid, Skeleton } from '@mantine/core';
 import PropTypes from 'prop-types';
 
 import CharacterCard from './CharacterCard';
 
-const ChracacterGrid = ({ characters }) => {
+const CharacterGrid = ({ characters, loading }) => {
   return (
     <Grid columns={18} justify='center' align='center' gutter='lg'>
       {characters.map((char) => (
@@ -14,16 +14,20 @@ const ChracacterGrid = ({ characters }) => {
           md={6}
           lg={4}
           style={{ maxHeight: 420 }}
+          key={`character-${char.id}`}
         >
-          <CharacterCard character={char} />
+          <Skeleton visible={loading} animate={false}>
+            <CharacterCard character={char} />
+          </Skeleton>
         </Grid.Col>
       ))}
     </Grid>
   );
 };
 
-ChracacterGrid.propTypes = {
+CharacterGrid.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.object).isRequired,
+  loading: PropTypes.bool.isRequired,
 };
 
-export default ChracacterGrid;
+export default CharacterGrid;
