@@ -1,6 +1,6 @@
 # Sobre el proyecto
 
-En este proyecto se muestra los personajes de [Rick & Morty](https://rickandmortyapi.com/documentation), y los pagina. Este proyecto emplea el framework [Mantine](https://www.mantine.dev)
+En este proyecto se muestra los personajes de [Rick & Morty](https://rickandmortyapi.com/documentation), y los pagina. Este proyecto emplea el framework [Mantine](https://mantine.dev/)
 
 ## Live demo
 [Rick & Morty in netlify](https://rickandmorty-jcdiaz.netlify.app/)  
@@ -9,7 +9,7 @@ En este proyecto se muestra los personajes de [Rick & Morty](https://rickandmort
 
 ## Instalación
 
-``sh
+```sh
 npm install
 npm start
-``
+```
