@@ -13,6 +13,7 @@ import {
 } from '@mantine/core';
 import CharacterGrid from './components/CharacterGrid';
 import ToggleTheme from './components/ToggleTheme';
+import Footer from './components/Footer';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -118,6 +119,7 @@ const App = () => {
               />
             </Center>
           </div>
+          <Footer />
         </AppShell>
       </MantineProvider>
     </ColorSchemeProvider>
