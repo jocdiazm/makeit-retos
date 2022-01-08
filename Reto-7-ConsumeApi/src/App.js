@@ -10,6 +10,7 @@ import {
   Image,
   MantineProvider,
   ColorSchemeProvider,
+  Container,
 } from '@mantine/core';
 import CharacterGrid from './components/CharacterGrid';
 import ToggleTheme from './components/ToggleTheme';
@@ -107,7 +108,9 @@ const App = () => {
               />
             </Center>
 
-            <CharacterGrid characters={characters} loading={loading} />
+            <Container fluid style={{ maxWidth: 1500 }}>
+              <CharacterGrid characters={characters} loading={loading} />
+            </Container>
 
             <Center>
               <Pagination
