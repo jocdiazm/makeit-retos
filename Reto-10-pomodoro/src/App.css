@@ -33,7 +33,7 @@ body {
   z-index: 1;
 }
 
-.ring.ending circle {
+.ring__ending circle {
   stroke: #900a0a;
 }
 
