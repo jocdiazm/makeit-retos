@@ -1,14 +1,16 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable react/prop-types */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import piano from './data';
+/* eslint-disable */
 import './App.css';
+
+import piano from './data';
 
 const PianoKey = ({ audiofile, typeKey, d }) => {
   const audio = new Audio(audiofile);
-  const start = () => {
-    audio.play();
+  const start = async () => {
+    try {
+      await audio.play();
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <a onClick={start}>
@@ -27,12 +29,14 @@ const App = () => {
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
       >
-        {piano.map((key) => {
+        {piano.map((key, index) => {
           return (
             <PianoKey
               audiofile={`./audio/key-${key.id}.mp3`}
               typeKey={`${key.typeKey}-keys`}
               d={key.d}
+              id={index}
+              key={index}
             />
           );
         })}
