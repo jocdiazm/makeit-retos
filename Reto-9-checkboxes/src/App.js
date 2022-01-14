@@ -34,15 +34,15 @@ const App = () => {
     newChecked[episodeId] = target.checked;
 
     const newFirstChecked = newChecked.findIndex((ep) => ep === true);
-
+    const [ini, end] = getMinMax(newFirstChecked, episodeId, firstChecked);
+    setFirstChecked(ini);
     if (clickShiftPressed) {
       //this takes into the actual min, max index
-      const [ini, end] = getMinMax(newFirstChecked, episodeId, firstChecked);
+
       const shiftChecked = newChecked.map((curr, index) =>
         index >= ini && index <= end ? true : curr,
       );
       setChecked(shiftChecked);
-      setFirstChecked(ini);
     } else {
       setChecked(newChecked);
     }
