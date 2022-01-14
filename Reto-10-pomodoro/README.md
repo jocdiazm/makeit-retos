@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Reto-10 Pomodoro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La idea de este proyecto es que el usuario:
 
-## Available Scripts
+* Pueda setear un timer con una duración
+* La App tenga track de ese timer
+* Cuando el tiempo se acabe, se hace un ring rojo y la App manda una notificación (alerta)
+* pueda pausar y hacer start 
+* Puedas resetear el timer cuando se acaba
+* PUeda establecer un nuevo timer al presionar un boton (con un modal)
 
-In the project directory, you can run:
+## Repositorio
+[Github - Reto9 Checboxes](https://github.com/jocdiazm/makeit-retos/tree/feature/reto10/Reto-10-pomodoro)
 
-### `npm start`
+## Demo en Netlify
+[Netlify App- Reto10 pomodoro](https://reto10-pomodoro-jcdiaz.netlify.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionamiento
+### Basic working
+![reto10-01-basic working](https://user-images.githubusercontent.com/13368066/149574416-46a96d97-56c4-47a1-926b-dd651a792681.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Timeout reset
+![reto10-02-timout and reset](https://user-images.githubusercontent.com/13368066/149574423-ededffa9-7401-45e9-9470-f5f6931348ed.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Setting up timer
+![reto10-03-settingup new timer](https://user-images.githubusercontent.com/13368066/149574430-a80bff0d-acab-4252-be97-800a1979ac64.gif)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalación
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+git clone 
+cd Reto-10-pomodoro
+npm install
+npm start
+```
