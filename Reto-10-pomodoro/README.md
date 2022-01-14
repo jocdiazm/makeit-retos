@@ -10,7 +10,7 @@ La idea de este proyecto es que el usuario:
 * PUeda establecer un nuevo timer al presionar un boton (con un modal)
 
 ## Repositorio
-[Github - Reto9 Checboxes](https://github.com/jocdiazm/makeit-retos/tree/feature/reto10/Reto-10-pomodoro)
+[Github - Reto10 pomodoro](https://github.com/jocdiazm/makeit-retos/tree/feature/reto10/Reto-10-pomodoro)
 
 ## Demo en Netlify
 [Netlify App- Reto10 pomodoro](https://reto10-pomodoro-jcdiaz.netlify.app)
