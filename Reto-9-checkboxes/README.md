@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Reto-9 Multiple Checkboxes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La idea de este proyecto es que el usuario:
 
-## Available Scripts
+* Pueda checkear mutiples checkboxes
+* La App siga el estado de cada checkbox
+* Cuando se oprima el botón , se deben marcar todos los checkboxes
+* Cuando se oprima `shift` **y se presione un checkbox** todos los checkboxes intermedios se marquen (sea hacia arriba o abajo en la lista)
 
-In the project directory, you can run:
+## Repositorio
+[Github - Reto9 Checboxes](https://github.com/jocdiazm/makeit-retos/tree/main/Reto-9-checkboxes)
 
-### `npm start`
+## Demo en Netlify
+[Netlify App- Reto9 Checkboxes](https://reto9-checkboxes-jcdiaz.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Funcionamiento**
+### simple checks
+![reto9-1-simplecheck](https://user-images.githubusercontent.com/13368066/149455748-88473854-6a53-4e4e-b821-54c8a1276f00.gif)
+### button maked!
+![reto9-2-buttonmarked](https://user-images.githubusercontent.com/13368066/149455762-3a80241e-5457-4aac-a8fe-2b7d3819a893.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `shift+check` Functionality
+![reto9-3-shiftclick](https://user-images.githubusercontent.com/13368066/149455767-866a5972-1115-4fb7-8273-175e8a4c4c19.gif)
 
-### `npm test`
+### Reverse `shift+check`
+![reto9-4-reverseshiftclick](https://user-images.githubusercontent.com/13368066/149455771-21e6c43b-78e8-447b-b5b1-e1c83c97e44f.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalación
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+git clone 
+cd Reto9-checkboxes
+npm install
+npm start
+```
