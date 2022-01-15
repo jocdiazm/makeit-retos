@@ -6,6 +6,7 @@ La idea de este proyecto es que el usuario:
 * Estas cambien de color según su tipo (blanca/negra)
 * Cuando las teclas se presionen, se reproduzca un sonido particular
 
+En este proyecto se empleó `parcel` en remplazo de `webpack` debido a problemas con el manejo de archivos estáticos. Que felicidad lo fácil y rápido que es parcel.
 
 ## Repositorio
 [Github - Reto11 piano](https://github.com/jocdiazm/makeit-retos/tree/feature/reto11/Reto-11-piano)
