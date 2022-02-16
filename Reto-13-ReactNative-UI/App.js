@@ -1,11 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
+import CardPost from './components/CardPost';
+import AppLoading from 'expo-app-loading';
+import {
+  useFonts,
+  Nunito_400Regular,
+  Nunito_500Medium,
+  Nunito_700Bold,
+} from '@expo-google-fonts/nunito';
+import data from './data';
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    Nunito_400Regular,
+    Nunito_500Medium,
+    Nunito_700Bold,
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.titleProject}>My first UI</Text>
+      <View style={styles.list}>
+        <FlatList
+          data={data}
+          renderItem={({ item }) => <CardPost {...item} />}
+          keyExtractor={(item) => `card-${item.id}`}
+        />
+      </View>
     </View>
   );
 }
@@ -13,8 +37,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    alignSelf: 'center',
+    backgroundColor: '#fff',
+    maxWidth: 450,
+  },
+  list: {
+    marginTop: 25,
+  },
+  titleProject: {
+    marginTop: 15,
+    fontSize: 40,
+    fontFamily: 'Nunito_500Medium',
   },
 });
